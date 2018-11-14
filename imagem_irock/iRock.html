@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iRock - a rocha virtual de estimação</title>
+
+    <script type="text/javascript">
+
+        function touchRock() {
+            var nome = prompt("Qual é o seu nome?", "Me informe seu nome.");
+
+            if (nome) {
+                alert("Prazer em conhecer você " + nome + "!");
+                document.getElementById("rockImg").src = "rock_happy.png";
+            }
+        }
+
+    </script>
+</head>
+
+<body onload=" alert('Olá, eu sou a rocha virtual de estimação!');">
+
+    <div style="margin-top:100px; text-align:center">
+        <img id="rockImg" src="rock.png" alt="iRock" style="cursor:pointer" onclick="touchRock();"/>
+
+    </div>
+
+
+</body>
+
+</html>
